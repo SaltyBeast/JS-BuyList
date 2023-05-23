@@ -2,15 +2,200 @@
 <html>
 <head lang="uk">
     <meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Page</title>
-
-
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/adding.css" />
+		<link rel="stylesheet" href="styles/statistic.css" />
+		<link rel="stylesheet" href="styles/beige.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-	<span class="product-item">
+	<!-- <span class="product-item">
 		Apple
 		<span class="amount">4</span>
-	</span>
+	</span> -->
+	<div class="beige-div">
+		<p class="beige">
+			Buy List
+		</p>
+		<p class="beige-description">
+			Created by: <br>
+			Sasha Syniak
+		</p>
+	</div>
+
+	<div class="beige-print-div">
+		<p class="beige-description-mod">
+			Created by: <br>
+			<span class="author">Sasha Syniak</span>
+		</p>
+	</div>
+
+	<div class="main-wrapper">
+
+		<div class="operations-div">
+			<div class="add-div">
+				<div class="add-button-div">
+					<input class="add-input" 
+						type="text" placeholder="Назва товару" />
+					<button class="add-button">
+						Додати
+					</button>
+				</div>
+			</div>
+
+			<div class="product-div">
+				<div class="left-section">
+					<label class="product-name-slesh" for="name">
+						Помідори
+					</label>
+				</div>
+				<div class="middle-section">
+					<button class="minus-button">
+						–
+						<div class="tooltip-div">
+							<label data-tooltip="tooltip" 
+								for="tooltip">
+								Зменшити кількість
+							</label>
+						</div>
+					</button>
+					<input class="amount" 
+						type="text" value="2" readonly />
+					<button class="plus-button">
+						+
+						<div class="tooltip-div">
+							<label data-tooltip="tooltip" 
+								for="tooltip">
+								Збільшити кількість
+							</label>
+						</div>
+					</button>
+				</div>
+				<div class="right-section">
+					<button class="no-buy-button">
+						Не куплено
+					</button>
+				</div>
+			</div>
+
+			<div class="product-div">
+				<div class="left-section">
+					<label class="product-name-text" for="name">
+						Печиво
+					</label>
+				</div>
+				<div class="middle-section">
+					<button class="minus-button">
+						–
+						<div class="tooltip-div">
+							<label data-tooltip="tooltip" 
+								for="tooltip">
+								Зменшити кількість
+							</label>
+						</div>
+					</button>
+					<input class="amount" 
+						type="text" value="2" readonly />
+					<button class="plus-button">
+						+
+						<div class="tooltip-div">
+							<label data-tooltip="tooltip" 
+								for="tooltip">
+								Збільшити кількість
+							</label>
+						</div>
+					</button>
+				</div>
+				<div class="right-section">
+					<button class="buy-button">
+						Куплено
+					</button>
+					<button class="cross-button">
+						&#10006;
+						<div class="tooltip-div">
+							<label data-tooltip="tooltip" 
+								for="tooltip">
+								Скасувати
+							</label>
+						</div>
+					</button>
+				</div>
+			</div>
+
+			<div class="product-div">
+				<div class="left-section">
+					<input class="input-product-name" 
+						type="text" placeholder="Сир" />
+				</div>
+				<div class="middle-section">
+					<button class="minus-button-disable">
+						–
+					</button>
+					<input class="amount" 
+						type="text" value="1" readonly />
+					<button class="plus-button">
+						+
+						<div class="tooltip-div">
+							<label data-tooltip="tooltip" 
+								for="tooltip">
+								Збільшити кількість
+							</label>
+						</div>
+					</button>
+				</div>
+				<div class="right-section">
+					<button class="buy-button">
+						Куплено
+					</button>
+					<button class="cross-button">
+						&#10006;
+						<div class="tooltip-div">
+							<label data-tooltip="tooltip" 
+								for="tooltip">
+								Скасувати
+							</label>
+						</div>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="statistics-div">
+			<div class="info-div">
+				<p class="info">
+					Залишилося
+				</p>
+			</div>
+			<div class="remaining-div">
+				<span class="product-item">
+					Печиво
+					<span class="amount-statistic">2</span>
+				</span>
+				<span class="product-item">
+					Сир
+					<span class="amount-statistic">1</span>
+				</span>
+			</div>
+			<div class="info-div">
+				<p class="info">
+					Куплено
+				</p>
+			</div>
+			<div class="sold-div">
+				<span class="product-item-slesh">
+					Помідори
+					<span class="amount-statistic-slesh">
+						2
+					</span>
+				</span>
+			</div>
+		</div>
+
+	</div>
 </body>
 </html>
