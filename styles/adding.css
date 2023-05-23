@@ -106,7 +106,7 @@ label[data-tooltip] {
 .minus-button:hover .tooltip-div,
 .plus-button:hover .tooltip-div{
   opacity: 1;
-  transform: translate(0, 0.1em);
+  transform: translate(0, 0.15em);
 	transition: all .25s ease-in-out;
 }
 
